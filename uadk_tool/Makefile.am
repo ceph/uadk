@@ -2,7 +2,7 @@ ACLOCAL_AMFLAGS = -I m4 -I./include
 AUTOMAKE_OPTIONS = foreign subdir-objects
 AM_CFLAGS=-Wall -Werror -fno-strict-aliasing -I$(top_srcdir) -I$(top_srcdir)/benchmark/include \
 			-pthread
-AM_CFLAGS += -fPIC -fPIE -pie -fstack-protector-strong -D_FORTIFY_SOURCE=2 \
+AM_CFLAGS += -fPIC -fPIE -pie -fstack-protector-strong \
 -O2 -ftrapv -Wl,-z,now -Wl,-s
 
 #AUTOMAKE_OPTIONS = subdir-objects
