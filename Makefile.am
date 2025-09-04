@@ -1,7 +1,7 @@
 ACLOCAL_AMFLAGS = -I m4 -I./include
 AUTOMAKE_OPTIONS = foreign subdir-objects
 AM_CFLAGS=-Wall -Werror -fno-strict-aliasing -I$(top_srcdir)/include
-AM_CFLAGS+=-fPIC -fPIE -pie -fstack-protector-strong -D_FORTIFY_SOURCE=2 \
+AM_CFLAGS+=-fPIC -fPIE -pie -fstack-protector-strong \
 	   -O2 -ftrapv -Wl,-z,relro,-z,now -Wl,-s
 CLEANFILES =
 
